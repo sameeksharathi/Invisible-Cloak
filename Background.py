@@ -10,7 +10,7 @@ while cap.isOpened():
         cv2.imshow("image", background)
         if cv2.waitKey(5) == ord("q"):                # Picture will click after every 5 seconds until key 'q' is pressed
             # save the image
-            cv2.imwrite('./image.jpg', background)
+            cv2.imwrite('./background.jpg', background)
             break
 
 cap.release()
