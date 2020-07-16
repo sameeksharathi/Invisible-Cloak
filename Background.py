@@ -8,7 +8,7 @@ while cap.isOpened():
     ret, background = cap.read()  # Here is am simply reading file
     if ret:
         cv2.imshow("image", background)
-        if cv2.waitKey(5) == ord("q"):
+        if cv2.waitKey(5) == ord("q"):                # Picture click after every 5 seconds until key 'q' is pressed
             # save the image
             cv2.imwrite('./image.jpg', background)
             break
