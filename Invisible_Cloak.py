@@ -22,7 +22,7 @@ while cap.isOpened():
         # threshold the hsv value to get only red color
 
         l_red = np.array([0, 100, 100])
-        u_red = np.array([10, 255, 255])
+        u_red = np.array([40, 255, 255])
 
         mask = cv2.inRange(hsv, l_red, u_red)
         # cv2.imshow('mask', mask)                # Red color will get highlighted and get a B/W picture where red is heighlighted by white
