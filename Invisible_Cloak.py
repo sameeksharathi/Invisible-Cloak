@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 cap = cv2.VideoCapture(0)
-background = cv2.imread('./image.jpg')
+background = cv2.imread('./background.jpg')
 
 while cap.isOpened():
     # take each frame
