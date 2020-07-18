@@ -44,8 +44,6 @@ while cap.isOpened():
 
         cv2.imshow("cloak", part1 + part2)
 
-        
-
         if cv2.waitKey(5) == ord("q"):
             break
 
