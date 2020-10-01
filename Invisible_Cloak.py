@@ -1,12 +1,12 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(0)
 background = cv2.imread('./background.jpg')
 
-while cap.isOpened():
+while capture.isOpened():
     # take each frame
-    ret, frame = cap.read()
+    ret, frame = capture.read()
     if ret:
         # how do we convert rgb to hsv (hue saturation value)
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -47,5 +47,5 @@ while cap.isOpened():
         if cv2.waitKey(5) == ord("q"):
             break
 
-cap.release()
+capture.release()
 cv2.destroyAllWindows()
